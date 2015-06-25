@@ -1,0 +1,19 @@
+{
+	"name": "s9e/highlighter",
+	"type": "phpbb-extension",
+	"description": "Adds syntax highlighting to code blocks using highlight.js",
+	"homepage": "https://github.com/s9e/phpbb-ext-highlighter/",
+	"version": "1.0",
+	"keywords": ["phpbb","code","syntax","highlighting","highlighter"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"authors": [{ "name": "JoshyPHP" }],
+	"extra": {
+		"display-name": "s9e/highlighter",
+		"soft-require": {
+			"phpbb/phpbb": "3.2.*"
+		}
+	}
+}

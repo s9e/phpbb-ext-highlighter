@@ -2,7 +2,7 @@ s9e\highlighter is a phpBB 3.2 extension that adds syntax highlighting to code b
 
 ### How to install
 
-Create a `s9e/highlighter` directory in the `ext` directory of your forum. Upload the `composer.json` file and the `styles` directory from this repository to the `s9e/highlighter` directory then go to the ACP and enable the extension.
+Download [the latest release](https://github.com/s9e/phpbb-ext-highlighter/releases/download/1.0/highlighter.zip) and unzip in the phpBB/ext directory of your forum. Then go to the ACP and enable the extension.
 
 ### Like this extension?
 

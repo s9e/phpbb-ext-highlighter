@@ -1,7 +1,7 @@
 (
 	function(document)
 	{
-		if (!document.getElementsByTagName("pre"))
+		if (!document.getElementsByTagName("pre").length)
 		{
 			return;
 		}

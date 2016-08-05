@@ -16,12 +16,12 @@
 			hljs.initHighlighting();
 		};
 		script.async = true;
-		script.src = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js";
+		script.src = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5/highlight.min.js";
 		head.appendChild(script);
 
 		link.type = "text/css";
 		link.rel = "stylesheet";
-		link.href = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/github-gist.min.css";
+		link.href = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5/styles/github-gist.min.css";
 		head.appendChild(link);
 	}
 )(document);

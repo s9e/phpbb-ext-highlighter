@@ -5,13 +5,13 @@ rootdir="$(realpath $(dirname $(dirname $0)))"
 cd "$rootdir"
 
 rm -rf "$tmpdir/s9e"
-mkdir -p "$tmpdir/s9e/highlighter/styles/prosilver/template/event"
+mkdir -p "$tmpdir/s9e/highlighter/styles/all/template/event"
 
 files="
 	LICENSE
 	README.md
 	composer.json
-	styles/prosilver/template/event/overall_footer_body_after.html
+	styles/all/template/event/overall_footer_body_after.html
 ";
 for file in $files;
 do

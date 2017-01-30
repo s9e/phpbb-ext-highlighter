@@ -1,5 +1,5 @@
 {
-	"name": "s9e/phpbb-ext-highlighter",
+	"name": "s9e/highlighter",
 	"type": "phpbb-extension",
 	"description": "Adds syntax highlighting to code blocks using highlight.js",
 	"homepage": "https://github.com/s9e/phpbb-ext-highlighter/",

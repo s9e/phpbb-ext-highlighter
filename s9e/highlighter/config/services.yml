@@ -1,0 +1,5 @@
+services:
+  s9e.highlighter.listener:
+    class: s9e\highlighter\listener
+    tags:
+      - { name: event.listener }

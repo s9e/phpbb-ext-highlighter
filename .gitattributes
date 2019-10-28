@@ -1,6 +1,2 @@
-.gitattributes                              export-ignore
-.gitmodules                                 export-ignore
-README.md                                   export-ignore
-ext                                         export-ignore
-s9e/highlighter/styles/all/template/init.js export-ignore
-scripts                                     export-ignore
+.gitattributes export-ignore
+README.md      export-ignore

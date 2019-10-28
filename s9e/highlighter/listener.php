@@ -46,8 +46,7 @@ class listener implements EventSubscriberInterface
 		$dom = $configurator->tags['CODE']->template->asDOM();
 		foreach ($dom->getElementsByTagName('code') as $code)
 		{
-			$code->setAttribute('class', trim($code->getAttribute('class') . ' {@lang}'));
-			$code->setAttribute('data-lang', '{@lang}');
+			$code->setAttribute('class', trim($code->getAttribute('class') . ' language-{@lang}'));
 		}
 		$dom->saveChanges();
 	}

@@ -2,7 +2,7 @@
 
 /**
 * @package   s9e\highlighter
-* @copyright Copyright (c) 2015-2019 The s9e Authors
+* @copyright Copyright (c) 2015-2020 The s9e authors
 * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\highlighter;
@@ -47,6 +47,11 @@ class listener implements EventSubscriberInterface
 		foreach ($dom->getElementsByTagName('code') as $code)
 		{
 			$code->setAttribute('class', trim($code->getAttribute('class') . ' language-{@lang}'));
+		}
+		foreach ($dom->getElementsByTagName('pre') as $pre)
+		{
+			$pre->setAttribute('data-s9e-livepreview-hash', '');
+			$pre->setAttribute('data-s9e-livepreview-onupdate', "if(typeof hljsLoader!=='undefined')hljsLoader.highlightBlocks(this)");
 		}
 		$dom->saveChanges();
 	}

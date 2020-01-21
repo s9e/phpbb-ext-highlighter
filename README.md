@@ -1,4 +1,4 @@
-s9e/highlighter is a phpBB 3.2 extension that adds syntax highlighting to code blocks using [highlight.js](https://highlightjs.org/).
+s9e/highlighter is a phpBB 3.3 extension that adds syntax highlighting to code blocks using [highlight.js](https://highlightjs.org/).
 
 ### How to install
 

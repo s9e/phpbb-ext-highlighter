@@ -13,6 +13,7 @@
 	"authors": [{ "name": "JoshyPHP" }],
 	"extra": {
 		"display-name": "s9e/highlighter",
+		"installer-name": "highlighter",
 		"soft-require": {
 			"phpbb/phpbb": "3.3.*"
 		},

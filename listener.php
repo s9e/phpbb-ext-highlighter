@@ -2,18 +2,30 @@
 
 /**
 * @package   s9e\highlighter
-* @copyright Copyright (c) 2015-2020 The s9e authors
+* @copyright Copyright (c) 2015-2021 The s9e authors
 * @license   http://www.opensource.org/licenses/mit-license.php The MIT License
 */
 namespace s9e\highlighter;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use phpbb\template\twig\twig;
 
 class listener implements EventSubscriberInterface
 {
+	protected $hasCode = false;
+	protected $template;
+
+	public function __construct(twig $template)
+	{
+		$this->template = $template;
+	}
+
 	public static function getSubscribedEvents()
 	{
-		return ['core.text_formatter_s9e_configure_after' => 'onConfigure'];
+		return [
+			'core.text_formatter_s9e_configure_after' => 'onConfigure',
+			'core.text_formatter_s9e_render_before'   => 'onRender'
+		];
 	}
 
 	public function onConfigure($event)
@@ -54,5 +66,14 @@ class listener implements EventSubscriberInterface
 			$pre->setAttribute('data-s9e-livepreview-onupdate', "if(typeof hljsLoader!=='undefined')hljsLoader.highlightBlocks(this)");
 		}
 		$dom->saveChanges();
+	}
+
+	public function onRender($event)
+	{
+		if (!$this->hasCode && strpos($event['xml'], '<CODE') !== false)
+		{
+			$this->hasCode = true;
+			$this->template->assign_var('NEEDS_HLJS_LOADER', '1');
+		}
 	}
 }

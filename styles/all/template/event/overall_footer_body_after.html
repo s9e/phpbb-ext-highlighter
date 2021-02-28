@@ -1,1 +1,4 @@
+{% if NEEDS_HLJS_LOADER %}
+{% set NEEDS_HLJS_LOADER = 0 %}
 <script async src="https://cdn.jsdelivr.net/gh/s9e/hljs-loader@1.0.12/loader.min.js" crossorigin="anonymous" integrity="sha384-8nvilyI853lFtVdVYU+pX+4cv/6EWFVYP9l52xHJjn2JaUD5ojvrRQyEjB1nuh/v" data-hljs-style="github-gist"></script>
+{% endif %}

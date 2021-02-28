@@ -2,6 +2,7 @@ services:
   s9e.highlighter.listener:
     class: s9e\highlighter\listener
     arguments:
+      - '@cache'
       - '@template'
     tags:
       - { name: event.listener }

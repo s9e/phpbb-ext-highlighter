@@ -3,7 +3,7 @@
 	"type": "phpbb-extension",
 	"description": "Adds syntax highlighting to code blocks using highlight.js",
 	"homepage": "https://github.com/s9e/phpbb-ext-highlighter/",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"keywords": ["phpbb","code","syntax","highlighting","highlighter","highlightjs"],
 	"license": "MIT",
 	"require": {

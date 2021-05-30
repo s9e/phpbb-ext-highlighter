@@ -97,7 +97,7 @@ class listener implements EventSubscriberInterface
 	{
 		$parameters = [
 			'hljs_options'     => '',
-			'hljs_style'       => 'github-gist',
+			'hljs_style'       => 'github',
 			'hljs_url'         => '',
 			'needs_loader'     => 1,
 			'script_integrity' => 'sha384-0R2eSjxhS3nwxyF5hfN2eeJ2m+X1s6yA8sb5pK7+/haZVPDRqEZIAQvSK4isiB5K',
